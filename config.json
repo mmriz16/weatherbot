@@ -1,42 +1,17 @@
 {
-  "_comment": "Weatherbot config - V2 ready (CLOB V2 launches Apr 28 2026)",
-
-  "mode": "sim",
   "balance": 100.0,
   "max_bet": 2.0,
-  "min_ev": 0.05,
+  "min_ev": 0.1,
   "max_price": 0.45,
   "min_volume": 500,
   "min_hours": 2.0,
   "max_hours": 72.0,
   "kelly_fraction": 0.25,
-  "kelly_warmup": 30,
-  "scan_interval": 3600,
-  "monitor_interval": 600,
+  "scan_interval": 300,
+  "calibration_min": 30,
+  "vc_key": "P97EXRP8RUTVA2CLZMD284L6T",
   "max_slippage": 0.03,
+  "bet_pct": 7,
   "stop_loss_pct": 0.20,
-  "trail_trigger_pct": 0.20,
-  "take_profit_max": 0.85,
-  "forecast_shift_exit": 2.0,
-  "circuit_breaker_fails": 3,
-
-  "_clob_v2": {
-    "note": "CLOB V2 launches Apr 28 2026 ~18:00 WIB. After launch, switch to real mode.",
-    "clob_host_v2": "https://clob-v2.polymarket.com",
-    "clob_host_prod": "https://clob.polymarket.com",
-    "chain": 137,
-    "collateral": "pUSD",
-    "collateral_address_v2": "TBD_after_launch",
-    "exchange_v2": "TBD_after_launch",
-    "neg_risk_exchange_v2": "TBD_after_launch",
-    "router_v2": "TBD_after_launch",
-    "conditional_tokens": "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045",
-    "sdk": "py-clob-client-v2>=1.0.0"
-  },
-
-  "vc_key": "YOUR_VISUAL_CROSSING_KEY",
-  "anthropic_key": "",
-  "telegram_token": "",
-  "telegram_chat_id": "",
-  "polymarket_pk": ""
+  "take_profit_max": 0.85
 }
